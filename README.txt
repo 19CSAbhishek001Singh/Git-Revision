@@ -18,4 +18,12 @@ And all the files in this area, git already manages them and knows their version
 7. `commit -> commit is a particular version of the project. It captures a snapshot of the project's staged
 changes and creates a version out of it.
 
-8. `git commit` -> register staging chnages toa commit means techinal now in Repository area
+8. `git commit` -> register staging chnages toa commit means techinal now in Repository area.
+
+9. `git log` -> list down all the commits of the Repository.
+
+10. `git restore <file>` -> to discard changes in working directory now git is tracking so techincally commited chnagesare in staging are
+and new things in working area.
+
+If we did some bad code we can we can use this, instead of deleting every change line by line or say go to last version.
+
