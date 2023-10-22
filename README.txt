@@ -23,7 +23,8 @@ changes and creates a version out of it.
 9. `git log` -> list down all the commits of the Repository.
 
 10. `git restore <file>` -> to discard changes in working directory now git is tracking so techincally commited chnagesare in staging are
-and new things in working area.
+and new things in working area.If we did some bad code we can we can use this, instead of deleting every change line by line or say go to
+ last version.
 
-If we did some bad code we can we can use this, instead of deleting every change line by line or say go to last version.
-
+11. `git restore --staged <file>` -> to unstage,it remove file from chnages from staging to working area.
+this work only chnages are in staging area.
