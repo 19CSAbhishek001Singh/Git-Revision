@@ -56,3 +56,4 @@ remote name is always used to establish connection.
 
 22. `git pull <remote name> <branch name>` : download latest changes from the branch  of the mentioned repo to our local
 
+23.
