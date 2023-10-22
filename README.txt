@@ -38,3 +38,14 @@ can't to git rm if we have staging chnages.
 
 14. 'git commit -m "mesage"` -> to not open vim directly provide commit messages do this.
 
+15. `git remote`-> list down all the remote connection names
+
+16. Remote connections -> lik two git repo for uploading and dowloading changes from each otherwise
+
+17. `git remote add <name of remote> <link of repo> -> this help us to add a new link to the remote and give a name to it
+
+18. `git remote rm <name of remote>` -> to delete a remote connection
+
+19. `git remote rename <old name> <new name>` -> this command renames the remote connection
+
+remote name is always used to establish connection
