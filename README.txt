@@ -28,3 +28,13 @@ and new things in working area.If we did some bad code we can we can use this, i
 
 11. `git restore --staged <file>` -> to unstage,it remove file from chnages from staging to working area.
 this work only chnages are in staging area.
+
+12. differnce b/w git rm and git restore 
+if you want to  move the whole file back to the untracked status we do git rm otherwise if we just wanted chnages to be 
+moved in working or staging area then git restore
+can't to git rm if we have staging chnages.
+
+13. `git diff commit1 commit2`-> gives differnce of files between two commits
+
+14. 'git commit -m "mesage"` -> to not open vim directly provide commit messages do this.
+
