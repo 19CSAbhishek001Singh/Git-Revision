@@ -48,5 +48,5 @@ can't to git rm if we have staging chnages.
 
 19. `git remote rename <old name> <new name>` -> this command renames the remote connection
 
-remote name is always used to establish connection
+remote name is always used to establish connection.
 
