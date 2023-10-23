@@ -55,8 +55,7 @@ remote name is always used to establish connection.
 21. `git add .` -> add all files to staging.
 
 22. `git pull <remote name> <branch name>` : download latest changes from the branch  of the mentioned repo to our local
-23. check conflict
- 
 
+Merge conflicts can occur if multiple people try to make changes to same file, and then collaborate
 
-24.  
+HEAD tells you what branch you are working on and what's the current commit

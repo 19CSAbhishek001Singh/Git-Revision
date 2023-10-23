@@ -1,0 +1,85 @@
+git  internal understanding
+
+tree .git
+.git
+├── HEAD
+├── config
+├── description
+├── hooks
+│   ├── applypatch-msg.sample
+│   ├── commit-msg.sample
+│   ├── fsmonitor-watchman.sample
+│   ├── post-update.sample
+│   ├── pre-applypatch.sample
+│   ├── pre-commit.sample
+│   ├── pre-merge-commit.sample
+│   ├── pre-push.sample
+│   ├── pre-rebase.sample
+│   ├── pre-receive.sample
+│   ├── prepare-commit-msg.sample
+│   ├── push-to-checkout.sample
+│   └── update.sample
+├── info
+│   └── exclude
+├── objects
+│   ├── info
+│   └── pack
+└── refs
+    ├── heads
+    └── tags
+
+
+Git internals % echo 'Hello git'
+Hello git
+
+Git internals % echo 'hello git' | git hash-object --stdin
+8d0e41234f24b6da002d962a26c2495ea16a425f
+
+
+'hello git' | git hash-object -w  --stdin
+8d0e41234f24b6da002d962a26c2495ea16a425f
+
+ Git internals % tree .git
+.git
+├── FETCH_HEAD
+├── HEAD
+├── config
+├── description
+├── hooks
+│   ├── applypatch-msg.sample
+│   ├── commit-msg.sample
+│   ├── fsmonitor-watchman.sample
+│   ├── post-update.sample
+│   ├── pre-applypatch.sample
+│   ├── pre-commit.sample
+│   ├── pre-merge-commit.sample
+│   ├── pre-push.sample
+│   ├── pre-rebase.sample
+│   ├── pre-receive.sample
+│   ├── prepare-commit-msg.sample
+│   ├── push-to-checkout.sample
+│   └── update.sample
+├── info
+│   └── exclude
+├── objects
+│   ├── 8d
+│   │   └── 0e41234f24b6da002d962a26c2495ea16a425f
+│   ├── info
+│   └── pack
+└── refs
+    ├── heads
+    └── tags
+
+
+
+ Git internals % cd .git/objects
+ objects % cd 8d 
+ 8d % cat 0e41234f24b6da002d962a26c2495ea16a425f 
+xK??OR04`?H???WH?,?6A?%        
+
+
+.git % git cat-file -p 8d0e41234f24b6da002d962a26c2495ea16a425f
+
+hello git
+
+
